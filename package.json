@@ -4,7 +4,8 @@
   "description": "React course",
   "scripts": {
     "start": "parcel index.html",
-    "test": "jest"
+    "test": "jest",
+    "build": "parcel build index.html"
   },
   "author": "prabhat",
   "license": "ISC",
@@ -13,6 +14,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "parcel-bundler": "^1.12.5"
   },
   "browserslist": [

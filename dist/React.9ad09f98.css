@@ -1,2 +1,26 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid black;
+
+}
+
+
+.nav-items>ul{
+    list-style-type: none;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+
+.nav-items>ul>li{
+    padding: 10px;
+}
+
+
+.logo{
+    width: 100px;
+}
 
 /*# sourceMappingURL=/React.9ad09f98.css.map */

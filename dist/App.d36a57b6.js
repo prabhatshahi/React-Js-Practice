@@ -28837,45 +28837,52 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"node_modules/react-dom/client.js":[function(require,module,exports) {
-'use strict';
-
-var m = require('react-dom');
-if ("development" === 'production') {
-  exports.createRoot = m.createRoot;
-  exports.hydrateRoot = m.hydrateRoot;
-} else {
-  var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-  exports.createRoot = function (c, o) {
-    i.usingClientEntryPoint = true;
-    try {
-      return m.createRoot(c, o);
-    } finally {
-      i.usingClientEntryPoint = false;
-    }
-  };
-  exports.hydrateRoot = function (c, h, o) {
-    i.usingClientEntryPoint = true;
-    try {
-      return m.hydrateRoot(c, h, o);
-    } finally {
-      i.usingClientEntryPoint = false;
-    }
-  };
-}
-},{"react-dom":"node_modules/react-dom/index.js"}],"App.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
-var _client = _interopRequireDefault(require("react-dom/client"));
+var _reactDom = _interopRequireDefault(require("react-dom"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-var heading = _react.default.createElement("h1", {
-  id: "title"
-}, "Heading 1");
+{/** Header:-Logo,
+                     cart
+                    Nav Item
+ 
+         Body:-Search bar
+          restraunt-image, name, rating,  cusine list) ,
+        Footer-:
+                copyright
+        */
+}
 
-// Render the heading element to the DOM
-_client.default.render(heading, document.getElementById("root"));
-},{"react":"node_modules/react/index.js","react-dom/client":"node_modules/react-dom/client.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+// header Component
+var Title = function Title() {
+  return /*#__PURE__*/_react.default.createElement("a", {
+    href: "/"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    className: "logo",
+    alt: "logo",
+    src: "https://policenewsvarieties.com/wp-content/uploads/2020/07/35F88449-D5B8-4778-BD20-A607751179DE.jpeg"
+  }));
+};
+var Header = function Header() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "header"
+  }, /*#__PURE__*/_react.default.createElement(Title, null), /*#__PURE__*/_react.default.createElement("div", {
+    className: "nav-items"
+  }, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, "Home"), /*#__PURE__*/_react.default.createElement("li", null, "About"), /*#__PURE__*/_react.default.createElement("li", null, "Contact Us"), /*#__PURE__*/_react.default.createElement("li", null, "Cart"))));
+};
+var Body = function Body() {
+  return /*#__PURE__*/_react.default.createElement("h4", null, "Body");
+};
+var Footer = function Footer() {
+  return /*#__PURE__*/_react.default.createElement("h4", null, "Footer");
+};
+var AppLayout = function AppLayout() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(Header, null), /*#__PURE__*/_react.default.createElement(Body, null), /*#__PURE__*/_react.default.createElement(Footer, null));
+};
+var root = _reactDom.default.createRoot(document.getElementById("root"));
+root.render( /*#__PURE__*/_react.default.createElement(AppLayout, null));
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -28900,7 +28907,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53514" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54151" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
