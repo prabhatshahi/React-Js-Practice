@@ -1,0 +1,25 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "React course",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest"
+  },
+  "author": "prabhat",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "browserslist": [
+    "last 2 version"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prabhatshahi/React-Js-Practice.git"
+  }
+}
