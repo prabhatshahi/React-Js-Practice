@@ -28871,8 +28871,23 @@ var Header = function Header() {
     className: "nav-items"
   }, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, "Home"), /*#__PURE__*/_react.default.createElement("li", null, "About"), /*#__PURE__*/_react.default.createElement("li", null, "Contact Us"), /*#__PURE__*/_react.default.createElement("li", null, "Cart"))));
 };
+var wowmomo = {
+  name: "Wow-Momo",
+  image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/5a148e63e9c54942e37627da1aa156be",
+  cusines: ["Tibbetian", "American"],
+  rating: "4.2"
+};
+var RestrauntCart = function RestrauntCart() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "card"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: wowmomo.image
+  }), /*#__PURE__*/_react.default.createElement("h2", null, wowmomo.name), /*#__PURE__*/_react.default.createElement("h3", null, wowmomo.cusines.join(",")), /*#__PURE__*/_react.default.createElement("h4", null, wowmomo.rating, " Stars"));
+};
 var Body = function Body() {
-  return /*#__PURE__*/_react.default.createElement("h4", null, "Body");
+  return /*#__PURE__*/_react.default.createElement("div", {
+    class: "restaurent-list"
+  }, /*#__PURE__*/_react.default.createElement(RestrauntCart, null), /*#__PURE__*/_react.default.createElement(RestrauntCart, null), /*#__PURE__*/_react.default.createElement(RestrauntCart, null), /*#__PURE__*/_react.default.createElement(RestrauntCart, null), /*#__PURE__*/_react.default.createElement(RestrauntCart, null), /*#__PURE__*/_react.default.createElement(RestrauntCart, null), /*#__PURE__*/_react.default.createElement(RestrauntCart, null), /*#__PURE__*/_react.default.createElement(RestrauntCart, null), /*#__PURE__*/_react.default.createElement(RestrauntCart, null), /*#__PURE__*/_react.default.createElement(RestrauntCart, null), /*#__PURE__*/_react.default.createElement(RestrauntCart, null));
 };
 var Footer = function Footer() {
   return /*#__PURE__*/_react.default.createElement("h4", null, "Footer");

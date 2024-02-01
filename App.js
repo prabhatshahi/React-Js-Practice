@@ -44,9 +44,42 @@ const Header = () => {
   );
 };
 
+    const wowmomo={
+        name:"Wow-Momo",
+        image:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/5a148e63e9c54942e37627da1aa156be",
+        cusines :["Tibbetian", "American"],
+        rating: "4.2",
+    };
+
+const RestrauntCart=()=>{
+    return(
+        <div className="card">
+            <img src={wowmomo.image}/>
+            <h2>{wowmomo.name}</h2>
+            
+            <h3>{wowmomo.cusines.join(",")}</h3>
+
+            <h4>{wowmomo.rating} Stars</h4>
+
+        </div>
+    )
+}
+
 const Body =()=>{
     return(
-        <h4>Body</h4>
+        <div class="restaurent-list">
+            <RestrauntCart />
+            <RestrauntCart />
+            <RestrauntCart />
+            <RestrauntCart />
+            <RestrauntCart />
+            <RestrauntCart />
+            <RestrauntCart />
+            <RestrauntCart />
+            <RestrauntCart />
+            <RestrauntCart />
+            <RestrauntCart />
+        </div>
     )
 }
 const Footer =()=>{
